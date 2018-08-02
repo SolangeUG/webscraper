@@ -7,6 +7,11 @@ class RedditbotSpider(scrapy.Spider):
     allowed_domains = ['www.reddit.com/r/womenintech/']
     start_urls = ['https://www.reddit.com/r/womenintech/']
 
+    # location of csv file
+    custom_settings = {
+        'FEED_URI': 'data/reddit-women-in-tech.csv'
+    }
+
     def parse(self, response):
         # Extracting content using CSS selectors
         titles = response.css('.fiq55l-0::text').extract()
