@@ -16,13 +16,21 @@ NEWSPIDER_MODULE = 'webscraper.spiders'
 
 # Export as CSV Feed
 FEED_FORMAT = "csv"
-FEED_URI = "data/reddit-women-in-tech.csv"
+# Each spider can have their FEED_UI customized
+# FEED_URI = "data/reddit-women-in-tech.csv"
+
+# Enable images pipelines in order to download images
+ITEM_PIPELINES = {
+  'scrapy.pipelines.images.ImagesPipeline': 1
+}
+IMAGES_STORE = 'data/images/'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'webscraper (+http://www.yourdomain.com)'
+USER_AGENT = "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 # CONCURRENT_REQUESTS = 32
