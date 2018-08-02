@@ -14,8 +14,9 @@ This project is about building a webscraper in Python, using Scrapy, an open sou
 
 ## Resources
 
-- [Scrapy tutorial][6]
-- [Web scraping using Scrapy][7]
+- [Scrapy installation guide][6]
+- [Scrapy tutorial][7]
+- [Web scraping using Scrapy][8]
 
 ## License
 
@@ -45,5 +46,6 @@ limitations under the License.
 [3]: https://scrapy.org/
 [4]: https://atom.io/
 [5]: https://www.jetbrains.com/pycharm/download
-[6]: https://doc.scrapy.org/en/latest/intro/tutorial.html
-[7]: https://www.analyticsvidhya.com/blog/2017/07/web-scraping-in-python-using-scrapy/
+[6]: https://doc.scrapy.org/en/latest/intro/install.html#intro-install
+[7]: https://doc.scrapy.org/en/latest/intro/tutorial.html
+[8]: https://www.analyticsvidhya.com/blog/2017/07/web-scraping-in-python-using-scrapy/
